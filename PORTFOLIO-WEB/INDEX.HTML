@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik-Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 35);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 81px;
+            background-color: rgb(13 13 84 / 86%);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 100px;
+            align-items: center;
+        }
+
+        .leftsection {
+            width: 30%;
+            font-size: 2rem;
+
+        }
+
+        .rightsection {
+            width: 30%;
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin-top: 55px;
+        }
+
+        .ABC {
+            color: rgb(72, 72, 194);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: hotpink;
+            font-size: 1.03rem;
+        }
+
+        #element {
+            color: rgb(71, 71, 194);
+        }
+
+        main hr {
+            background: rgb(27, 16, 98);
+            height: 2.5px;
+            margin-left: 200px;
+            margin-right: 200px;
+            border: 0;
+        }
+
+        .secondsection {
+            max-width: 60vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 56vw;
+            height: 2px;
+            margin: 48px 69px;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 110px;
+        }
+
+        .secondsection h1 {
+            position: relative;
+            top: 81px;
+            left: -221px;
+        }
+
+        .img1top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -13px;
+        }
+
+        .img2top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -13px;
+        }
+
+        .img3top {
+            width: 30px;
+            position: relative;
+            top: -37px;
+            left: -13px;
+        }
+
+        .img4top {
+            width: 30px;
+            position: relative;
+            top: -37px;
+            left: -13px;
+        }
+
+        .cpptext {
+            position: relative;
+            top: 50px;
+            left: -20px;
+            font-size: 20px;
+            color: rgb(73, 73, 182);
+        }
+
+        .htmltext {
+            position: relative;
+            top: 50px;
+            left: -20px;
+            font-size: 20px;
+            color: rgb(73, 73, 182);
+        }
+
+        .csstext {
+            position: relative;
+            top: 45px;
+            left: -17px;
+            font-size: 20px;
+            color: rgb(73, 73, 182);
+        }
+
+        .jstext {
+            position: relative;
+            top: 41px;
+            left: -54px;
+            font-size: 20px;
+            color: rgb(73, 73, 182);
+        }
+
+        .cpp-desc {
+            position: relative;
+            top: 61px;
+            left: -24px;
+            font-size: 10px;
+            width: 10vw;
+        }
+
+        .html-desc {
+            position: relative;
+            top: 61px;
+            left: -24px;
+            font-size: 10px;
+            width: 10vw;
+        }
+
+        .css-desc {
+            position: relative;
+            top: 61px;
+            left: -24px;
+            font-size: 10px;
+            width: 10vw;
+        }
+
+        .js-desc {
+            position: relative;
+            top: 61px;
+            left: -24px;
+            font-size: 10px;
+            width: 10vw;
+        }
+
+        footer {
+            background-color: #0c0c42;
+            height: 203px;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 100px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 270px;
+        }
+
+        .footer-last {
+            text-align: center;
+            color: gray;
+            position: relative;
+            top: 16px;
+        }
+
+        .leftsection .btn1 {
+            background-color: #492149;
+            padding: 6px;
+            border-radius: 9px;
+            border: 2px solid white;
+            color: white;
+            cursor: pointer;
+        }
+
+        .leftsection .btn2 {
+            background-color: #000000;
+            padding: 6px;
+            border-radius: 9px;
+            border: 2px solid white;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ritik-Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+
+                Hi, My name is <span class="ABC">Ritik</span>
+                <div>and I am a passionate </div>
+
+
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn1">Download Resume</button>
+                    <button class="btn2">Visit-Github</button>
+                </div>
+
+            </div>
+
+            <div class="rightsection">
+                <img src="web.png.webp" alt="Error">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1> 1> Technical Skill's </h1>
+
+            <div class="box">
+                <!-- for first vertical line in skill's -->
+                <div class="vertical">
+                    <img class="img1top" src="C++.png" alt="">
+                    <div class="cpptext">
+                        C++
+                    </div>
+                    <div class="cpp-desc">
+                        C++ (or “C-plus-plus”) is a generic programming language for building software. It’s an
+                        object-oriented language.
+                    </div>
+                </div>
+
+                <!-- for second vertical line in skill's -->
+
+                <div class="vertical">
+                    <img class="img2top" src="HTML.png" alt="">
+                    <div class="htmltext">
+                        HTML
+                    </div>
+                    <div class="html-desc">
+                        HTML stands for Hyper Text Markup Language · HTML is the standard markup language for creating
+                        Web pages · HTML describes the structure of a Web page ·
+                    </div>
+                </div>
+
+                <!-- for third vertical line in skill's -->
+
+                <div class="vertical">
+                    <img class="img3top" src="CSS.png" alt="">
+                    <div class="csstext">
+                        CSS
+                    </div>
+                    <div class="css-desc">
+                        CSS stands for Cascading Style Sheets · CSS describes how HTML elements are to be displayed on
+                        screen, paper, or in other media ·
+                    </div>
+                </div>
+                <!-- for fourth vertical line in skill's -->
+
+                <div class="vertical">
+                    <img class="img4top" src="JS.png" alt="">
+                    <div class="jstext">
+                        JAVASCRIPT
+                    </div>
+                    <div class="js-desc">
+                        JavaScript is a scripting language that enables you to create dynamically updating content,
+                        control multimedia, animate images, and pretty much everything else
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first-footer">
+                <h1>Ritik's Developer Portfolio</h1>
+            </div>
+            <div class="second-footer">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="third-footer">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-last">
+            copyright &#169;www.ritiksportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <!-- Load library from the CDN -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Fronted Web Developer !', 'web Designer !'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
